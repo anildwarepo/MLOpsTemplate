@@ -11,7 +11,7 @@ on:
       - .github/workflows/workshop_cd.yml
 jobs:
   Workshop-Deployment:
-    runs-on: self-hosted
+    runs-on: [anildwa-wsl, linux, X64]
     steps:
 
       - name: Check out repository code
@@ -60,5 +60,5 @@ jobs:
         uses: ./.github/actions/aml-endpoint-swap
         with:
           resourceGroup: aml-rg #setup replace azureml with the name of your resource group in Azure
-          workspaceName: aml-testws #setup replace ws01ent with the name of your workspace in Azure
+          workspaceName: aml-testws #setup replace ws01ent with the name of your workspace in Azure1
           endpointFile: src/workshop/core/scoring/endpoint.yml
