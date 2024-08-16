@@ -11,7 +11,8 @@ on:
       - .github/workflows/workshop_cd.yml
 jobs:
   Workshop-Deployment:
-    runs-on: [anildwa-wsl, linux, X64]
+    #runs-on: [anildwa-wsl, linux, X64]
+    runs-on: ubuntu-latest
     steps:
 
       - name: Check out repository code

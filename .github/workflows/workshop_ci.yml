@@ -11,7 +11,8 @@ on:
       - .github/workflows/workshop_ci.yml
 jobs:
   Workshop-Train-Validation:
-    runs-on: [anildwa-wsl, linux, X64]
+    #runs-on: [anildwa-wsl, linux, X64]
+    runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
