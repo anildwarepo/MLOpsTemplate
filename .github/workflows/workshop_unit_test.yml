@@ -11,7 +11,8 @@ on:
 
 jobs:
   unit-test:
-    runs-on: [anildwa-wsl, linux, X64]
+    #runs-on: [anildwa-wsl, linux, X64]
+    runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
@@ -31,7 +32,7 @@ jobs:
       - name: Install AZ ML and tools
         run: | # SETUP line 34 to point to your own AML workspace
           az extension add -n ml -y
-          az configure --defaults group=aml-rg workspace=aml-testws location=westus
+          az configure --defaults group=aml-rg workspace=anildwa-westus3 location=westus3
       - name: Run Feature Engineering
         uses: ./.github/actions/aml-job-create
         with:
