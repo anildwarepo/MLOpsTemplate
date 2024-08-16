@@ -1,5 +1,5 @@
 $schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
-name: blue
+name: green
 description: pilot deployment v1.5
 endpoint_name: anildwa1-mlops-workshop-endpoint #setup replace `mlops-workshop-endpoint` with your own endpoint name defined in endpoint.yml
 #egress_public_network_access: disabled
